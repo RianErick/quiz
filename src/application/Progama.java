@@ -2,6 +2,7 @@ package application;
 import model.Usuario;
 import util.Header;
 import util.Perguntas;
+import util.Respostas;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -18,32 +19,29 @@ public class Progama {
         System.out.println("DIGITE SEU EMAIL:");
         String email = sc.nextLine();
 
-
-
-
-        int  pontuacao  = 0;
+        int pontuacao  = 0;
         Usuario usuario = new Usuario(nome, email, pontuacao);
 
-        Perguntas.resposta = false;
+        Respostas.respostaCorreta = false;
 
            int alternativa;
 
             Perguntas.Pergunta01();
             alternativa = sc.nextInt();
             Perguntas.Alternativas01(alternativa);
-            if(Perguntas.resposta){
+            if(Respostas.respostaCorreta){
                 pontuacao++;
             }
             Perguntas.Pergunta02();
             alternativa = sc.nextInt();
             Perguntas.Alternativas02(alternativa);
-            if(Perguntas.resposta){
+            if(Respostas.respostaCorreta){
                 pontuacao++;
             }
             Perguntas.Pergunta03();
             alternativa = sc.nextInt();
             Perguntas.Alternativas03(alternativa);
-            if(Perguntas.resposta){
+            if(Respostas.respostaCorreta){
                 pontuacao++;
 
         }
