@@ -1,0 +1,1 @@
+Estou desenvolvendo uma aplicação em Java 17 que consiste em um jogo de perguntas e respostas. O objetivo do projeto é treinar os pilares de orientação a objeto do Java e relembrar conceitos importantes. Vale ressaltar que o projeto ainda está em andamento.
